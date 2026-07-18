@@ -182,7 +182,6 @@
         <button class="nav-item" data-seccion="diabetes">🩸 DIABETES</button>
         <button class="nav-item" data-seccion="hipertension">❤️ HIPERTENSIÓN</button>
         <button class="nav-item" data-seccion="ceb">⚠️ CEB PENDIENTES</button>
-        <button class="nav-item" data-seccion="facturacion">💰 FACTURACIÓN <span class="badge-dev">🚧 EN DESARROLLO</span></button>
     </div>
     
     <div id="seccion-general" class="seccion active">
@@ -211,16 +210,6 @@
                 <button class="btn-export" id="exportOSConCoberturaBtn" style="display:none"><i class="fas fa-check-circle"></i> EXPORTAR CON COBERTURA</button>
                 <button class="btn-export btn-danger" id="exportOSSinDatosBtn" style="display:none"><i class="fas fa-exclamation-circle"></i> EXPORTAR SIN DATOS</button>
             </div>
-        </div>
-    </div>
-
-    <div id="seccion-facturacion" class="seccion">
-        <div class="facturacion-dev">
-            <i class="fas fa-hard-hat"></i>
-            <h2 style="color:var(--orange); margin:15px 0">🚧 MÓDULO EN DESARROLLO</h2>
-            <p style="color:var(--text-secondary)">El módulo de facturación está siendo desarrollado con nuevas funcionalidades avanzadas.</p>
-            <p style="color:var(--text-muted); margin-top:10px">Próximamente: análisis detallado por estado, proyecciones y exportación automatizada.</p>
-            <button class="reset-btn" style="margin-top:20px" onclick="document.querySelector('.nav-item[data-seccion=\\'general\\']').click()">VOLVER AL PANEL PRINCIPAL</button>
         </div>
     </div>
 
@@ -386,8 +375,7 @@
 </div>
 
 <script>
-const DATA_URL = 'https://script.google.com/macros/s/AKfycbzjpHvMWbNC78brjExGx-f82497hUwNvHwUyHhp1HMCbo-Gc8T_ALDoIP3kZMNMSGKP2w/exec';
-//const DATA_URL = 'https://script.google.com/macros/s/AKfycbzwwr24e-S4KKcSlH39yM2dQLt27UiUJ7DcfizIWSPM4-tpIR9UV69tVcKat65liVI0/exec';
+const DATA_URL = 'https://script.google.com/macros/s/AKfycbzwwr24e-S4KKcSlH39yM2dQLt27UiUJ7DcfizIWSPM4-tpIR9UV69tVcKat65liVI0/exec';
 const POBLACION_ADULTA_CENSO = 28224;
 const PORCENTAJE_DBT = 0.109;
 const PORCENTAJE_HTA = 0.466;
